@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 
-namespace Etogy.Settlement.API {
+namespace TestServer {
   /// <summary>
   /// The main entry point of the program.
   /// </summary>

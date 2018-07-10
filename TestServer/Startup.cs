@@ -1,4 +1,4 @@
-﻿using Etogy.Settlement.API.Models;
+﻿using TestServer.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -6,7 +6,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 
-namespace Etogy.Settlement.API {
+namespace TestServer {
   public class Startup {
     public Startup(IConfiguration configuration, IHostingEnvironment env) {
       Configuration = configuration;

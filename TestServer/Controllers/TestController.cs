@@ -1,8 +1,8 @@
 using System.Threading;
-using Etogy.Settlement.API.Models;
+using TestServer.Models;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Etogy.Settlement.API.Controllers {
+namespace TestServer.Controllers {
   [ApiController]
   [Route("api/[controller]")]
   public class TestController : ControllerBase {

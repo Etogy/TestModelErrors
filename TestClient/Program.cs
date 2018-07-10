@@ -2,9 +2,9 @@
 using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
-using Etogy.Settlement.API.Models;
+using TestServer.Models;
 
-namespace Etogy.Settlement.API.Client {
+namespace TestClient {
   public class Program {
     private const int RequestSize = 1000;
 

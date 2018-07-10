@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Etogy.Settlement.API.Models {
+namespace TestServer.Models {
   public class TransactionCollection {
     public List<Transaction> Transactions { get; } = new List<Transaction>();
 
