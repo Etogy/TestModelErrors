@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Threading.Tasks;
 using TestServer.Models;
 
@@ -14,6 +15,7 @@ namespace TestClient {
       _client = new HttpClient {
         BaseAddress = new Uri("http://localhost:5000")
       };
+      _client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/xml"));
 
       var transactions = BuildTransactions();
 

@@ -17,7 +17,10 @@ namespace TestServer {
     private IHostingEnvironment CurrentEnvironment { get; }
 
     public void ConfigureServices(IServiceCollection services) {
-      services.AddMvc()
+      services.AddMvc(options => {
+        // options.MaxModelValidationErrors = int.MaxValue;
+      })
+        .AddXmlSerializerFormatters()
         .SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
     }
 
