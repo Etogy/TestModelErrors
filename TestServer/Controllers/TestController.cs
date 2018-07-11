@@ -15,5 +15,10 @@ namespace TestServer.Controllers {
     public IActionResult PostWithoutToken(TransactionCollection request) {
       return Ok(new { IsValid = ModelState.IsValid, MaxErrorsReached = ModelState.HasReachedMaxErrors, Errors = ModelState.ErrorCount });
     }
+
+    [HttpPost("tokenFirst")]
+    public IActionResult PostWithTokenFirst(CancellationToken token, TransactionCollection request) {
+      return Ok(new { IsValid = ModelState.IsValid, MaxErrorsReached = ModelState.HasReachedMaxErrors, Errors = ModelState.ErrorCount });
+    }
   }
 }
